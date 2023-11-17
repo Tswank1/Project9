@@ -1,0 +1,28 @@
+class Squarenum{
+    field int product;
+    field int initial;
+
+    constructor Squarenum new(int x){
+        let product = x;
+        let initial = x;
+        do multiply();
+        return this;
+    }
+
+    method void dispose(){
+        do Memory.deAlloc(this);
+        return;
+    }
+
+    method void multiply(){
+        let product = product * product;
+        return;
+    }
+
+    method void print(){
+        do Output.printInt(initial);
+        do Output.printString(" squared is: ");
+        do Output.printInt(product);
+        return;
+    }
+}

@@ -1,0 +1,17 @@
+class Main{
+    function void main(){
+        var Squarenum first, second, third;
+        do Output.printString("Testing Main");
+        do Output.println();
+        let first = Squarenum.new(4);
+        do first.print();
+        do Output.println();
+        let second = Squarenum.new(3);
+        do second.print();
+        do Output.println();
+        let third = Squarenum.new(2);
+        do third.print();
+        do Output.println();
+        return;
+    }
+}
